@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Audio BookTV View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="AudioBookTVViewController" customModule="AudioBookTV1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Books" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2Y-kv-9yf">
+                                <rect key="frame" x="151" y="71" width="91" height="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vig-pj-09w">
+                                <rect key="frame" x="30" y="125" width="134.66666666666666" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Why We Sleep"/>
+                                <connections>
+                                    <action selector="whyTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YZy-sV-qCX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jk0-91-biI">
+                                <rect key="frame" x="30" y="168" width="155.66666666666666" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Dopamine Nation"/>
+                                <connections>
+                                    <action selector="dopamineTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5gE-6G-Hg7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjW-nt-hbC">
+                                <rect key="frame" x="30" y="211" width="136" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start with Why"/>
+                                <connections>
+                                    <action selector="startTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hMO-7g-csc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Jk0-91-biI" firstAttribute="top" secondItem="vig-pj-09w" secondAttribute="bottom" constant="8" symbolic="YES" id="4V3-zs-Spk"/>
+                            <constraint firstItem="cjW-nt-hbC" firstAttribute="top" secondItem="Jk0-91-biI" secondAttribute="bottom" constant="8" symbolic="YES" id="9RI-iM-ZmH"/>
+                            <constraint firstItem="G2Y-kv-9yf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="UDl-5B-EXF"/>
+                            <constraint firstItem="cjW-nt-hbC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="UEo-4b-psm"/>
+                            <constraint firstItem="G2Y-kv-9yf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aGV-i7-rhe"/>
+                            <constraint firstItem="vig-pj-09w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="ai6-o1-DHh"/>
+                            <constraint firstItem="vig-pj-09w" firstAttribute="top" secondItem="G2Y-kv-9yf" secondAttribute="bottom" constant="36" id="bCK-u5-x75"/>
+                            <constraint firstItem="Jk0-91-biI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="hUx-yK-6ux"/>
+                            <constraint firstItem="G2Y-kv-9yf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="151" id="uqW-PN-LN2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64.885496183206101" y="3.5211267605633805"/>
+        </scene>
+        <!--Audio List View Controller-->
+        <scene sceneID="BC3-zh-g9Y">
+            <objects>
+                <viewController storyboardIdentifier="AudioListViewController" modalPresentationStyle="fullScreen" id="mx9-vZ-YSg" customClass="AudioListViewController" customModule="AudioBookTV1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nGC-aB-bzc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWo-SD-FAl">
+                                <rect key="frame" x="8" y="51" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="ZJ0-z9-m8I"/>
+                                    <constraint firstAttribute="height" constant="44" id="wCN-bW-aCR"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="exit"/>
+                                <connections>
+                                    <action selector="backBtn:" destination="mx9-vZ-YSg" eventType="touchUpInside" id="MU2-J5-Psr"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whyWeSleep" translatesAutoresizingMaskIntoConstraints="NO" id="nIP-01-hW3">
+                                <rect key="frame" x="80" y="121" width="215" height="215"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="215" id="8ck-bD-9b7"/>
+                                    <constraint firstAttribute="height" constant="215" id="ttw-Xw-F8y"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why We Sleep" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQl-t5-8UG">
+                                <rect key="frame" x="124.66666666666666" y="352" width="125.66666666666666" height="22"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5E-YH-TBh">
+                                <rect key="frame" x="20" y="461" width="335" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="335" id="i54-CC-Rdo"/>
+                                    <constraint firstAttribute="height" constant="44" id="i8T-KR-fnJ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Play">
+                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="17"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="playBtn:" destination="mx9-vZ-YSg" eventType="touchUpInside" id="Ykd-p9-TZK"/>
+                                    <action selector="playButton:" destination="mx9-vZ-YSg" eventType="touchUpInside" id="Ezt-hS-bal"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Unlocking the Power of Sleep and Dreams" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qs-fB-WKW">
+                                <rect key="frame" x="50" y="386" width="275" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.35686274509803922" green="0.35686274509803922" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LOV-Vu-3Up"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LOV-Vu-3Up" firstAttribute="trailing" secondItem="b5E-YH-TBh" secondAttribute="trailing" constant="20" id="DoE-Jo-53j"/>
+                            <constraint firstItem="nIP-01-hW3" firstAttribute="leading" secondItem="LOV-Vu-3Up" secondAttribute="leading" constant="80" id="L5u-nH-8fO"/>
+                            <constraint firstItem="HWo-SD-FAl" firstAttribute="leading" secondItem="LOV-Vu-3Up" secondAttribute="leading" constant="8" id="TtP-s7-fA2"/>
+                            <constraint firstItem="4qs-fB-WKW" firstAttribute="centerX" secondItem="nGC-aB-bzc" secondAttribute="centerX" id="aLZ-zi-uV0"/>
+                            <constraint firstItem="HWo-SD-FAl" firstAttribute="top" secondItem="LOV-Vu-3Up" secondAttribute="top" constant="-8" id="d5E-Ke-mRa"/>
+                            <constraint firstItem="4qs-fB-WKW" firstAttribute="top" secondItem="RQl-t5-8UG" secondAttribute="bottom" constant="12" id="dRY-iQ-iFd"/>
+                            <constraint firstItem="nIP-01-hW3" firstAttribute="top" secondItem="HWo-SD-FAl" secondAttribute="bottom" constant="26" id="i6c-Xv-SlP"/>
+                            <constraint firstItem="LOV-Vu-3Up" firstAttribute="trailing" secondItem="4qs-fB-WKW" secondAttribute="trailing" constant="50" id="jzf-JU-8s2"/>
+                            <constraint firstItem="b5E-YH-TBh" firstAttribute="centerX" secondItem="nIP-01-hW3" secondAttribute="centerX" id="lOE-Yv-0SD"/>
+                            <constraint firstItem="RQl-t5-8UG" firstAttribute="centerX" secondItem="nGC-aB-bzc" secondAttribute="centerX" id="pXP-Of-rEG"/>
+                            <constraint firstItem="RQl-t5-8UG" firstAttribute="top" secondItem="nIP-01-hW3" secondAttribute="bottom" constant="16" id="qux-Ve-LSG"/>
+                            <constraint firstItem="b5E-YH-TBh" firstAttribute="centerX" secondItem="nGC-aB-bzc" secondAttribute="centerX" id="rGb-lJ-npt"/>
+                            <constraint firstItem="b5E-YH-TBh" firstAttribute="top" secondItem="4qs-fB-WKW" secondAttribute="bottom" constant="32" id="re0-9u-8TY"/>
+                            <constraint firstItem="4qs-fB-WKW" firstAttribute="leading" secondItem="LOV-Vu-3Up" secondAttribute="leading" constant="50" id="z1U-Ra-c1a"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="describLbl" destination="4qs-fB-WKW" id="hdz-l0-sRr"/>
+                        <outlet property="iconImageView" destination="nIP-01-hW3" id="crc-vJ-e6m"/>
+                        <outlet property="playButton" destination="b5E-YH-TBh" id="aVk-1O-80Q"/>
+                        <outlet property="titleLbl" destination="RQl-t5-8UG" id="BbS-FZ-Bs0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pia-Mp-upL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="713.74045801526711" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="exit" width="28" height="28"/>
+        <image name="whyWeSleep" width="215" height="215"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
