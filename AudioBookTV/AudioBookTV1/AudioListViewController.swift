@@ -4,10 +4,12 @@ struct AudioList {
     let title: String
     let describtion: String
     let image: UIImage
+    let items: [String]
 }
 
 class AudioListViewController: UIViewController {
     
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var iconImageView: UIImageView!
     @IBOutlet weak var describLbl: UILabel!
@@ -22,6 +24,13 @@ class AudioListViewController: UIViewController {
         playButton.layer.masksToBounds = true
         
         configure()
+        configureTableView()
+    }
+    
+    private func configureTableView() {
+        tableView.dataSource = self
+        let cellName = "AudioListItemCell"
+        tableView.register(UINib(nibName: cellName, bundle: nil), forCellReuseIdentifier: cellName)
     }
     
     func configure() {
@@ -38,4 +47,19 @@ class AudioListViewController: UIViewController {
     }
 }
 
-
+extension AudioListViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        audioList.items.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "AudioListItemCell") as? AudioListItemCell
+        else { return UITableViewCell() }
+        
+        let item = audioList.items[indexPath.row]
+        cell.configure(with: item)
+        
+        return cell
+    }
+}
