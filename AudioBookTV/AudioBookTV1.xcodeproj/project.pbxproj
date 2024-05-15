@@ -14,6 +14,10 @@
 		B8A456E52BE536290024BF92 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B8A456E42BE536290024BF92 /* Base */; };
 		B8A456ED2BE5378E0024BF92 /* AudioBookTVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A456EC2BE5378E0024BF92 /* AudioBookTVViewController.swift */; };
 		B8A456EF2BE54BC80024BF92 /* AudioListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A456EE2BE54BC80024BF92 /* AudioListViewController.swift */; };
+		B8FAED1F2BF4AA2B003FDE0F /* AudioListCellNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FAED1D2BF4AA2B003FDE0F /* AudioListCellNew.swift */; };
+		B8FAED202BF4AA2B003FDE0F /* AudioListCellNew.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8FAED1E2BF4AA2B003FDE0F /* AudioListCellNew.xib */; };
+		B8FAED242BF4B090003FDE0F /* AudioListItemCellNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FAED222BF4B090003FDE0F /* AudioListItemCellNew.swift */; };
+		B8FAED252BF4B090003FDE0F /* AudioListItemCellNew.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8FAED232BF4B090003FDE0F /* AudioListItemCellNew.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		B8A456E62BE536290024BF92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8A456EC2BE5378E0024BF92 /* AudioBookTVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioBookTVViewController.swift; sourceTree = "<group>"; };
 		B8A456EE2BE54BC80024BF92 /* AudioListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioListViewController.swift; sourceTree = "<group>"; };
+		B8FAED1D2BF4AA2B003FDE0F /* AudioListCellNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioListCellNew.swift; sourceTree = "<group>"; };
+		B8FAED1E2BF4AA2B003FDE0F /* AudioListCellNew.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AudioListCellNew.xib; sourceTree = "<group>"; };
+		B8FAED222BF4B090003FDE0F /* AudioListItemCellNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioListItemCellNew.swift; sourceTree = "<group>"; };
+		B8FAED232BF4B090003FDE0F /* AudioListItemCellNew.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AudioListItemCellNew.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,8 @@
 		B8A456D72BE536280024BF92 /* AudioBookTV1 */ = {
 			isa = PBXGroup;
 			children = (
+				B8FAED212BF4B05B003FDE0F /* AudioListItemCellNew */,
+				B8FAED1C2BF4A9FB003FDE0F /* AudioListCellNew */,
 				B8A456D82BE536280024BF92 /* AppDelegate.swift */,
 				B8A456DA2BE536280024BF92 /* SceneDelegate.swift */,
 				B8A456DE2BE536280024BF92 /* Main.storyboard */,
@@ -68,6 +78,24 @@
 				B8A456EE2BE54BC80024BF92 /* AudioListViewController.swift */,
 			);
 			path = AudioBookTV1;
+			sourceTree = "<group>";
+		};
+		B8FAED1C2BF4A9FB003FDE0F /* AudioListCellNew */ = {
+			isa = PBXGroup;
+			children = (
+				B8FAED1D2BF4AA2B003FDE0F /* AudioListCellNew.swift */,
+				B8FAED1E2BF4AA2B003FDE0F /* AudioListCellNew.xib */,
+			);
+			path = AudioListCellNew;
+			sourceTree = "<group>";
+		};
+		B8FAED212BF4B05B003FDE0F /* AudioListItemCellNew */ = {
+			isa = PBXGroup;
+			children = (
+				B8FAED222BF4B090003FDE0F /* AudioListItemCellNew.swift */,
+				B8FAED232BF4B090003FDE0F /* AudioListItemCellNew.xib */,
+			);
+			path = AudioListItemCellNew;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +159,8 @@
 				B8A456E22BE536290024BF92 /* Assets.xcassets in Resources */,
 				B8A456E52BE536290024BF92 /* Base in Resources */,
 				B8A456E02BE536280024BF92 /* Base in Resources */,
+				B8FAED252BF4B090003FDE0F /* AudioListItemCellNew.xib in Resources */,
+				B8FAED202BF4AA2B003FDE0F /* AudioListCellNew.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +174,8 @@
 				B8A456ED2BE5378E0024BF92 /* AudioBookTVViewController.swift in Sources */,
 				B8A456EF2BE54BC80024BF92 /* AudioListViewController.swift in Sources */,
 				B8A456D92BE536280024BF92 /* AppDelegate.swift in Sources */,
+				B8FAED1F2BF4AA2B003FDE0F /* AudioListCellNew.swift in Sources */,
+				B8FAED242BF4B090003FDE0F /* AudioListItemCellNew.swift in Sources */,
 				B8A456DB2BE536280024BF92 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
