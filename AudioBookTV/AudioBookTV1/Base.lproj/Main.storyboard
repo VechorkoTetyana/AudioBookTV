@@ -26,6 +26,14 @@
                                 <rect key="frame" x="0.0" y="109" width="393" height="743"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rB1-33-0S5">
+                                <rect key="frame" x="161.66666666666666" y="763" width="69.666666666666657" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Home"/>
+                                <connections>
+                                    <action selector="homeBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sLh-Gm-7nR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -34,12 +42,15 @@
                             <constraint firstItem="46z-6y-dw3" firstAttribute="top" secondItem="G2Y-kv-9yf" secondAttribute="bottom" constant="20" id="La9-Os-6Rl"/>
                             <constraint firstItem="G2Y-kv-9yf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="UDl-5B-EXF"/>
                             <constraint firstItem="G2Y-kv-9yf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aGV-i7-rhe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rB1-33-0S5" secondAttribute="bottom" constant="20" id="bp1-jK-8HM"/>
                             <constraint firstItem="46z-6y-dw3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eQl-j5-PBG"/>
                             <constraint firstItem="46z-6y-dw3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fot-QT-6Mn"/>
+                            <constraint firstItem="rB1-33-0S5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jQJ-DP-oYr"/>
                             <constraint firstItem="G2Y-kv-9yf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="151" id="uqW-PN-LN2"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="homeBtn" destination="rB1-33-0S5" id="8bT-Yr-JRF"/>
                         <outlet property="tableView" destination="46z-6y-dw3" id="GcL-rZ-FHP"/>
                     </connections>
                 </viewController>
@@ -141,6 +152,59 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pia-Mp-upL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="713.74045801526711" y="3.5211267605633805"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="cav-Mq-AdY">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="Mgw-gG-iIj" customClass="HomeViewController" customModule="AudioBookTV1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eFq-PT-FOY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEw-Vb-VP9">
+                                <rect key="frame" x="8" y="51" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="3QQ-nY-UEf"/>
+                                    <constraint firstAttribute="height" constant="44" id="II8-UF-zpb"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="exit"/>
+                                <connections>
+                                    <action selector="backBtn:" destination="mx9-vZ-YSg" eventType="touchUpInside" id="UHF-tU-MHh"/>
+                                    <action selector="closeBtnTapped:" destination="Mgw-gG-iIj" eventType="touchUpInside" id="U98-xK-0MK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C7c-ve-Rxb">
+                                <rect key="frame" x="175" y="71" width="43.333333333333343" height="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Jed-1H-rpA">
+                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="F4T-V9-VGq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Jed-1H-rpA" firstAttribute="trailing" secondItem="F4T-V9-VGq" secondAttribute="trailing" id="79b-7X-woT"/>
+                            <constraint firstItem="uEw-Vb-VP9" firstAttribute="leading" secondItem="F4T-V9-VGq" secondAttribute="leading" constant="8" id="ZmN-eW-mCt"/>
+                            <constraint firstItem="C7c-ve-Rxb" firstAttribute="centerX" secondItem="eFq-PT-FOY" secondAttribute="centerX" id="ah7-KB-VB9"/>
+                            <constraint firstItem="Jed-1H-rpA" firstAttribute="leading" secondItem="F4T-V9-VGq" secondAttribute="leading" id="bU7-qp-sUM"/>
+                            <constraint firstItem="uEw-Vb-VP9" firstAttribute="top" secondItem="F4T-V9-VGq" secondAttribute="top" constant="-8" id="gcW-gS-1He"/>
+                            <constraint firstAttribute="bottom" secondItem="Jed-1H-rpA" secondAttribute="bottom" id="lsB-T6-5k1"/>
+                            <constraint firstItem="C7c-ve-Rxb" firstAttribute="top" secondItem="F4T-V9-VGq" secondAttribute="top" constant="12" id="pjy-eI-ING"/>
+                            <constraint firstItem="Jed-1H-rpA" firstAttribute="top" secondItem="uEw-Vb-VP9" secondAttribute="bottom" constant="8" symbolic="YES" id="rAa-uq-lHQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Jed-1H-rpA" id="ofG-xu-y7Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T9Z-54-yft" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1414.5038167938931" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>
