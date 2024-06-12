@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ShowcaseBookCell" customModule="AudioBookTV1" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="231"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="231"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tgk-RL-5af">
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="231"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3KX-fn-jTS">
+                                <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="ZBL-l2-k65"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How We Learn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2x-4K-ksP">
+                                <rect key="frame" x="0.0" y="192" width="180" height="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Stanislas Dehaene" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5p-GN-fDy">
+                                <rect key="frame" x="0.0" y="214" width="180" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.35686274509803922" green="0.35686274509803922" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="K2x-4K-ksP" secondAttribute="trailing" id="BDv-m5-WR9"/>
+                            <constraint firstItem="3KX-fn-jTS" firstAttribute="leading" secondItem="tgk-RL-5af" secondAttribute="leading" id="FjV-Rj-eTX"/>
+                            <constraint firstAttribute="trailing" secondItem="n5p-GN-fDy" secondAttribute="trailing" id="JBL-pf-5Fy"/>
+                            <constraint firstItem="K2x-4K-ksP" firstAttribute="top" secondItem="3KX-fn-jTS" secondAttribute="bottom" constant="12" id="XaR-ML-AEE"/>
+                            <constraint firstItem="3KX-fn-jTS" firstAttribute="top" secondItem="tgk-RL-5af" secondAttribute="top" id="Zlb-wM-2eI"/>
+                            <constraint firstItem="n5p-GN-fDy" firstAttribute="leading" secondItem="tgk-RL-5af" secondAttribute="leading" id="hb5-2N-VlT"/>
+                            <constraint firstItem="K2x-4K-ksP" firstAttribute="leading" secondItem="tgk-RL-5af" secondAttribute="leading" id="jwk-ZB-JEk"/>
+                            <constraint firstAttribute="trailing" secondItem="3KX-fn-jTS" secondAttribute="trailing" id="rQt-TD-AV0"/>
+                            <constraint firstItem="n5p-GN-fDy" firstAttribute="top" secondItem="K2x-4K-ksP" secondAttribute="bottom" constant="5" id="zU4-JD-8CL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="tgk-RL-5af" secondAttribute="trailing" id="5Ue-Fo-3eB"/>
+                <constraint firstItem="tgk-RL-5af" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Yap-f3-nk7"/>
+                <constraint firstAttribute="bottom" secondItem="tgk-RL-5af" secondAttribute="bottom" id="fwY-R2-PdT"/>
+                <constraint firstItem="tgk-RL-5af" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="xW2-N2-Z4B"/>
+            </constraints>
+            <connections>
+                <outlet property="authorsLbl" destination="n5p-GN-fDy" id="cz8-e6-Zge"/>
+                <outlet property="coverImageView" destination="3KX-fn-jTS" id="dD7-En-atH"/>
+                <outlet property="titleLbl" destination="K2x-4K-ksP" id="7dl-CW-UhP"/>
+            </connections>
+            <point key="canvasLocation" x="125" y="-12"/>
+        </collectionViewCell>
+    </objects>
+</document>

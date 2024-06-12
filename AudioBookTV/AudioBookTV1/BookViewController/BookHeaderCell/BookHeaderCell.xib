@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="493" id="KGk-i7-Jjw" customClass="BookHeaderCell" customModule="AudioBookTV1" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="493"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="493"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P1y-3i-msl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="493"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whyWeSleep" translatesAutoresizingMaskIntoConstraints="NO" id="Acr-HZ-zsy">
+                                <rect key="frame" x="52.666666666666657" y="0.0" width="214.99999999999997" height="215"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="215" id="l6B-mL-Cd3"/>
+                                    <constraint firstAttribute="width" constant="215" id="qNw-5q-grP"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why We Sleep" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecY-0M-wbU">
+                                <rect key="frame" x="97.333333333333314" y="231" width="125.66666666666669" height="22"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Unlocking the Power of Sleep and Dreams" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZo-7V-of8">
+                                <rect key="frame" x="50" y="265" width="220" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.35686274509999999" green="0.35686274509999999" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jt-Ca-zP2">
+                                <rect key="frame" x="-7.6666666666666572" y="340" width="335.33333333333326" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="4WW-FC-jmw"/>
+                                    <constraint firstAttribute="width" constant="335" id="AGD-I3-F9l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapPlayBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ZYX-sT-UcZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nZo-7V-of8" firstAttribute="leading" secondItem="P1y-3i-msl" secondAttribute="leading" constant="50" id="50D-6G-yET"/>
+                            <constraint firstItem="0jt-Ca-zP2" firstAttribute="top" secondItem="nZo-7V-of8" secondAttribute="bottom" constant="32" id="HSS-a3-ec3"/>
+                            <constraint firstItem="ecY-0M-wbU" firstAttribute="top" secondItem="Acr-HZ-zsy" secondAttribute="bottom" constant="16" id="L7V-sK-loZ"/>
+                            <constraint firstAttribute="trailing" secondItem="nZo-7V-of8" secondAttribute="trailing" constant="50" id="MVW-A1-TeR"/>
+                            <constraint firstItem="Acr-HZ-zsy" firstAttribute="centerX" secondItem="P1y-3i-msl" secondAttribute="centerX" id="bvb-bj-5HD"/>
+                            <constraint firstItem="nZo-7V-of8" firstAttribute="centerX" secondItem="P1y-3i-msl" secondAttribute="centerX" id="e9i-uh-WEa"/>
+                            <constraint firstItem="Acr-HZ-zsy" firstAttribute="top" secondItem="P1y-3i-msl" secondAttribute="top" id="ihQ-JE-kz2"/>
+                            <constraint firstItem="0jt-Ca-zP2" firstAttribute="centerX" secondItem="P1y-3i-msl" secondAttribute="centerX" id="sYG-DB-KGK"/>
+                            <constraint firstItem="ecY-0M-wbU" firstAttribute="centerX" secondItem="P1y-3i-msl" secondAttribute="centerX" id="yCB-1g-kaj"/>
+                            <constraint firstItem="nZo-7V-of8" firstAttribute="top" secondItem="ecY-0M-wbU" secondAttribute="bottom" constant="12" id="zFF-kR-R95"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="P1y-3i-msl" secondAttribute="bottom" id="GGl-fM-Wwh"/>
+                    <constraint firstItem="P1y-3i-msl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="aTV-Yb-3mN"/>
+                    <constraint firstItem="P1y-3i-msl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ha3-j6-D2g"/>
+                    <constraint firstAttribute="trailing" secondItem="P1y-3i-msl" secondAttribute="trailing" id="tDv-P0-1fZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="coverImageView" destination="Acr-HZ-zsy" id="VSx-nr-aT9"/>
+                <outlet property="playBtn" destination="0jt-Ca-zP2" id="xyp-N2-CNH"/>
+                <outlet property="subtitleLbl" destination="nZo-7V-of8" id="9RY-mv-oxd"/>
+                <outlet property="titleLbl" destination="ecY-0M-wbU" id="0XJ-kK-AEf"/>
+            </connections>
+            <point key="canvasLocation" x="36.641221374045799" y="63.028169014084511"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="whyWeSleep" width="215" height="215"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
